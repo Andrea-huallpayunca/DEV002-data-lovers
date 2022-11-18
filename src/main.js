@@ -3,9 +3,6 @@ import data from './data/pokemon/pokemon.js'
 //Historia de usuario 1
 //1.1 Traer nombre e imagen al main
 
-//const carta=function(){
-//let resultado=document.getElementById('container-card');
-
 //identificar los elementos
 let nombrePokemon= data.pokemon[0].name;
 let imgPokemon=data.pokemon[0].img;
@@ -18,11 +15,13 @@ let card=document.createElement('div');
   <img src="${imgPokemon}">
 </div>`
 card.className = 'pokemon-group'
+
 //seleccionar donde se va a poner el nodo - elemento padre
 let elementoPadre=document.querySelector('#container-card')
 
 //agregar nodo
 elementoPadre.appendChild(card);
+
 
 
 
