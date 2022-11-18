@@ -1,5 +1,6 @@
 import data from './data/pokemon/pokemon.js'
 
+//-----------------------------------------
 //Historia de usuario 1
 //1.1 Traer nombre e imagen al main
 
@@ -24,23 +25,7 @@ elementoPadre.appendChild(card);
 
 
 
-
-/*card.innerHTML=
-   `<div class="carta">
-     <p class="nombre">${nombrePokemon}</p>
-     <img src="${imgPokemon}">
-   </div>`
-*/
-  //};
-
-
-
-
-
-
-
-
-
+//-------------------------------------------
 
 /*
 const pokemonList = data.pokemon;
