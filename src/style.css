@@ -218,9 +218,9 @@ li{
 /* ---------------Estilos del Modal -------------- */
 
 .modal{
-	display: none;
+	display: flex;
 	position: fixed;
-	z-index:3;
+	z-index:500;
 	overflow: auto;
 	left: 0;
 	top:0;
@@ -230,23 +230,30 @@ li{
 
 }
 .modal-flex{
-    width: 100%;
-    height: 100%;
+    width: 300px;
+    height: 400px;
     display: flex;
+    
     align-items: center;
     justify-content: center;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+	box-shadow: 0 0 6px 0 rgba(0, 0, 0, .4);
 }
 
 .container-modal{
 	position: relative;
 	background-color: #327ba5;
     margin: auto;
-    width: 90%;
-    border-radius: 0.4em;
-	box-shadow: 0 0 6px 0 rgba(0, 0, 0, .4);
+    width: 90%;    
+    align-items: center;
+    justify-content: center;
+
 	animation-name: modal;
     animation-duration: 0.5s;
+
 }
+
 
 @media(min-width:470px) {
     div.logo{

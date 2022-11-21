@@ -2,7 +2,7 @@
 import data from './data/pokemon/pokemon.js'
 const pokemonList = data.pokemon;
 const containerPokemons = document.querySelector('#container-card');
-const containerModal = document.querySelector('.container-modal');
+//const containerModal = document.querySelector('.container-modal');
 
 
 //-----------------------------------------------------
@@ -38,6 +38,26 @@ tarjetasPokemones(pokemonList); //usar el metodo con la data
 
 //1.2 Información pokemon
 
+//identificar los elementos
+let nombrePokemon= data.pokemon[0].name;
+let imgPokemon=data.pokemon[0].img;
+
+//crear un nodo
+let modal=document.createElement('div');
+ modal.innerHTML=
+`<div class="modal-flex">
+  <p class="nombre">${nombrePokemon}</p>
+  <p class="cerrar"> X </p>
+
+  <img src="${imgPokemon}">
+</div>`
+modal.className = 'modal'
+
+//seleccionar donde se va a poner el nodo - elemento padre
+let elementoPadre=document.querySelector('.container-modal')
+
+//agregar nodo
+elementoPadre.appendChild(modal);
 
 
 
