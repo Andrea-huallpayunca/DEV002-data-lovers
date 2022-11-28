@@ -108,6 +108,20 @@ const getTypes = (arr) => {
   return types;
 };
 
+/*const getEvolution= function(evo){
+  
+  //evo= Object.keys(poks.evolution[1]);
+
+  if(evo=='next-evolution'){
+    return poks.evolution["next-evolution"][0].name;
+  }
+  if (evo=='pre-evolution'){
+
+    return poks.evolution["pre-evolution"][0].name;
+  }
+};
+*/
+
  modal.innerHTML=
 `<div class="cuadro">
   <div class="modal-flex">
@@ -129,9 +143,9 @@ const getTypes = (arr) => {
     <div class="evolucion">
       <p class=titulo>Evolución</p>
       <div class="evo1">
-      <p class=sub>Next evolution: ${poks.evolution["next-evolution"][0].name||poks.evolution["prev-evolution"][0].name }</p>
+      <p class=sub>Next evolution: ${poks.evolution["next-evolution"][0].name}</p>
       <p class="sub">Candy: ${poks.evolution.candy} </p>
-      <p class="sub">Candy-cost: ${poks.evolution["next-evolution"][0]["candy-cost"]||poks.evolution["prev-evolution"][0]["candy-cost"]} </p>
+     
       </div>
     </div>
 
@@ -141,7 +155,7 @@ const getTypes = (arr) => {
   </div>
 </div>`
 modal.className = 'modal'
-
+// <p class="sub">Candy-cost: ${poks.evolution["next-evolution"][0]["candy-cost"]} </p>
 //seleccionar donde se va a poner el nodo - elemento padre
 let elementoPadre=document.querySelector('.container-modal')
 
