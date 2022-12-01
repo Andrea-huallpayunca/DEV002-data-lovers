@@ -4,6 +4,7 @@ const pokemonList = data.pokemon;
 const containerPokemons = document.querySelector('#container-card');
 //const containerModal = document.querySelector('.container-modal');
 
+import filtros from './data.js';
 
 //-----------------------------------------------------
 
@@ -43,8 +44,8 @@ const TypePokemon = (arrayType) => {
        //<p class="poke-info"> GEN name: ${poks.generation['name']}</p> 
        
        card.addEventListener('click', () => {
-        const mostrar = mostrarModal(poks);
-        mostrar.classList.add('modal');}) 
+       const mostrar = mostrarModal(poks);
+       mostrar.classList.add('modal');}) 
 
     count += 1;
     containerPokemons.appendChild(card);
@@ -102,23 +103,45 @@ let modal=document.createElement('div');
 const getTypes = (arr) => {
   let types = '';
   arr.forEach((eachType) => {
-    types += `${eachType} `;
+    types += `${eachType}`;
   });
   return types;
 };
 
-/*const getEvolution= function(evo){
+/*const getEvolution = (evo)=>{
   
-  //evo= Object.keys(poks.evolution[1]);
+   if(evo===poks.evolution["next-evolution"][0].name){
+    return poks.evolution["next-evolution"][0].name;
+  } else
+    return `${poks.evolution["prev-evolution"][0].name}`;
+  
+    
+  
+};
+
+const getEvolution= function(evo){
+  
+  evo= Object.keys(poks.evolution);
 
   if(evo=='next-evolution'){
     return poks.evolution["next-evolution"][0].name;
   }
-  if (evo=='pre-evolution'){
+  if (evo=='prev-evolution'){
 
-    return poks.evolution["pre-evolution"][0].name;
+    return poks.evolution["prev-evolution"][0].name;
   }
 };
+
+if (${poks.evolution["next-evolution"][0]}){
+  return
+  <p class=sub>Next evolution: ${poks.evolution["next-evolution"][0].name}</p>
+}
+else { 
+  return
+  <p class=sub>Next evolution: ${poks.evolution["pre-evolution"][0].name}</p>
+
+}
+
 */
 
  modal.innerHTML=
@@ -142,7 +165,7 @@ const getTypes = (arr) => {
     <div class="evolucion">
       <p class=titulo>Evolución</p>
       <div class="evo1">
-      <p class=sub>Next evolution: ${poks.evolution["next-evolution"][0].name}</p>
+      <p class="sub" id='evolution'>${poks.evolution.candy}</p>
       <p class="sub">Candy: ${poks.evolution.candy} </p>
      
       </div>
@@ -279,3 +302,16 @@ return modal;
 
 
 //Historia 2
+
+
+
+let filtro= document.getElementById('lista');
+filtro.addEventListener('change', ()=>{
+  if(filtro.value=='todos'){
+    tarjetasPokemones(pokemonList);
+  } else {
+  containerPokemons.innerHTML='';
+   tarjetasPokemones(filtros.filterData(pokemonList,filtro.value));
+    }
+  }
+  )
