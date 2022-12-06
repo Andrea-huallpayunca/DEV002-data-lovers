@@ -121,10 +121,11 @@ const getTypes = (arr) => {
     </div>
     
     <div class="evolucion">
-      <p class=titulo>Evolución</p>
+      <p class=titulo>Stats</p>
       <div class="evo1">
       
-      <p class="sub">Candy:${poks.evolution.candy} </p>
+      <p class="sub">Max HP: ${poks.stats['max-hp']} </p>
+      <p class="sub">Ma CP: ${poks.stats['max-cp']} </p>
      
       </div>
     </div>
