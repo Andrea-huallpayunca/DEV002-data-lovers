@@ -309,7 +309,7 @@ select {
 .modal-flex{
     position: absolute;
     width: 250px;
-    height: 350px;
+    height: 380px;
     z-index: 380;
     display: flex;
     
@@ -557,12 +557,12 @@ select {
 }
 .nombreA{
     position: absolute;
-    top:20px;
+    top:15px;
     left:0;
 }
 .typeA{
     position: absolute;
-    top:20px;
+    top:15px;
     left:45%;
 }
 /*--RegresarModal--*/
