@@ -125,7 +125,7 @@ const getTypes = (arr) => {
       <div class="evo1">
       
       <p class="sub">Max HP: ${poks.stats['max-hp']} </p>
-      <p class="sub">Ma CP: ${poks.stats['max-cp']} </p>
+      <p class="sub">Max CP: ${poks.stats['max-cp']} </p>
      
       </div>
     </div>
