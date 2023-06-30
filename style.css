@@ -1,13 +1,12 @@
 body{
     margin:0 0;
-    width: 100vw;
+    /* width: 100vw; */
 }
 header{
     margin: 0 0;
     background-color: #021E42;
     /* para que header no se mueva con el scroll*/
-    position: sticky;
-    top:0;
+    position: fixed;
     width: 100%;
     min-width: 300px;
     z-index: 3;
@@ -102,24 +101,19 @@ select {
 }
 
 /* ------------recuadro decontador de pokemones--------*/
-main{
-    position: relative;
-    /* top: 150px; */
-}
 
 .CARDSSPACE{
-    /* position:absolute; */
-    /* margin-top: 150px; */
-    z-index: 1; 
-    background-color: #f2f398;
+    position:absolute;
+    margin-top: 150px;
+    z-index: 1;
 }
 
 .pokemones-quantity{ 
    
     display: flex;
-    width: 100%;
-    padding: 0.5em 0;
-    justify-content: space-around;
+    width: 100vw;
+    padding: 0em 1em;
+    justify-content: space-between;
     min-width: 270px;
     background-color: #f2f398;
     /*padding-left: 5vw;*/
@@ -127,7 +121,7 @@ main{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-transform: uppercase;
     color: #656565;
-    font-size: 0.8em;
+    font-size: 1.2em;
  
 }
 .pokemones{  /*letra del contador */
@@ -136,7 +130,7 @@ main{
 }
 .pokemonesp{  /*letra del contador */
     font-weight: bold;
-   /* padding-right: 30px; */
+   padding-right: 30px;
     
 }
 
@@ -153,7 +147,7 @@ main{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    /* background-color: #f2f398; */
+    background-color: #f2f398;
  
    
 }
@@ -601,12 +595,9 @@ main{
     padding-right: 10vw;
  }
    .pokemones-quantity{
-    /* padding-left: 10vw; */
     font-size: 1.2em;
    }
-   /* .pokemonesp{
-    padding-right: 13vw;
-   } */
+
     .logo h1{
         font-size: 40px;
         
@@ -621,11 +612,6 @@ main{
     .logo input::-webkit-input-placeholder{
         color:#465B75;
     }
-    
-    /* main{
-         top: 180px; 
-        
-    } */
 }
 
 @media(min-width:800px) {
@@ -634,10 +620,4 @@ main{
         font-size: 70px;
 }
 
-/* main{
-    top: 215px;
-} */
-/* .pokemonesp{
-    padding-right: 15vw;
-   } */
 }
