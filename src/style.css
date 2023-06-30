@@ -1,6 +1,6 @@
 body{
     margin:0 0;
-    width: 100vw;
+    /* width: 100vw; */
 }
 header{
     margin: 0 0;
@@ -601,12 +601,9 @@ main{
     padding-right: 10vw;
  }
    .pokemones-quantity{
-    /* padding-left: 10vw; */
     font-size: 1.2em;
    }
-   /* .pokemonesp{
-    padding-right: 13vw;
-   } */
+
     .logo h1{
         font-size: 40px;
         
@@ -621,11 +618,6 @@ main{
     .logo input::-webkit-input-placeholder{
         color:#465B75;
     }
-    
-    /* main{
-         top: 180px; 
-        
-    } */
 }
 
 @media(min-width:800px) {
@@ -634,10 +626,4 @@ main{
         font-size: 70px;
 }
 
-/* main{
-    top: 215px;
-} */
-/* .pokemonesp{
-    padding-right: 15vw;
-   } */
 }
