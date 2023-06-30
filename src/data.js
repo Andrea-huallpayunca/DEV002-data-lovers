@@ -52,3 +52,7 @@ export const calculo = (count) =>{
   var enteroP =Math.round(porcentaje);
   return enteroP; 
 }
+
+// export const search = (text,)=>{
+
+// }

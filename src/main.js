@@ -308,4 +308,22 @@ filtro.addEventListener('change', ()=>{
   }
   )
 
+// HUX-Buscador
+let buscar= document.getElementById('buscar')
 
+
+buscar.addEventListener('input',(e)=>{
+  let valor = e.target.value;
+  let newAr = []
+  let regex= new RegExp(`^${valor.toLowerCase()}`, 'g')
+  // console.log(newAr)
+  // seleccionar los elementos de pokemonList que tengan algun match con el valor
+  pokemonList.forEach(ele=>{
+    if(ele['name'].match(regex)){
+      console.log(ele.name)
+      newAr.push(ele)
+    }
+  })
+  containerPokemons.innerHTML='';
+  tarjetasPokemones(newAr)
+})
