@@ -1,11 +1,12 @@
 body{
     margin:0 0;
+    width: 100vw;
 }
 header{
     margin: 0 0;
     background-color: #021E42;
     /* para que header no se mueva con el scroll*/
-    position: fixed;
+    position: sticky;
     top:0;
     width: 100%;
     min-width: 300px;
@@ -103,7 +104,7 @@ select {
 /* ------------recuadro decontador de pokemones--------*/
 main{
     position: relative;
-    top: 150px;
+    /* top: 150px; */
 }
 
 .CARDSSPACE{
@@ -600,12 +601,12 @@ main{
     padding-right: 10vw;
  }
    .pokemones-quantity{
-    padding-left: 10vw;
+    /* padding-left: 10vw; */
     font-size: 1.2em;
    }
-   .pokemonesp{
+   /* .pokemonesp{
     padding-right: 13vw;
-   }
+   } */
     .logo h1{
         font-size: 40px;
         
@@ -621,10 +622,10 @@ main{
         color:#465B75;
     }
     
-    main{
-        /* position:absolute; */
-        top: 180px;
-    }
+    /* main{
+         top: 180px; 
+        
+    } */
 }
 
 @media(min-width:800px) {
@@ -633,11 +634,10 @@ main{
         font-size: 70px;
 }
 
-.CARDSSPACE{
-    position:absolute;
-    margin-top: 210px;
-}
-.pokemonesp{
+/* main{
+    top: 215px;
+} */
+/* .pokemonesp{
     padding-right: 15vw;
-   }
+   } */
 }
