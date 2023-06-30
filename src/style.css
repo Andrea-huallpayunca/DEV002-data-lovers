@@ -104,7 +104,8 @@ select {
 .CARDSSPACE{
     position:absolute;
     margin-top: 150px;
-    z-index: 1;
+    z-index: 1; 
+    background-color: #f2f398;
 }
 
 .pokemones-quantity{ 
@@ -120,7 +121,7 @@ select {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-transform: uppercase;
     color: #656565;
-    font-size: 1.2em;
+    font-size: 0.8em;
  
 }
 .pokemones{  /*letra del contador */
@@ -146,7 +147,7 @@ select {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    background-color: #f2f398;
+    /* background-color: #f2f398; */
  
    
 }
@@ -595,6 +596,7 @@ select {
  }
    .pokemones-quantity{
     padding-left: 10vw;
+    font-size: 1.2em;
    }
    .pokemonesp{
     padding-right: 13vw;
